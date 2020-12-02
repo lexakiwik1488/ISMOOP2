@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\bin\Debug\ClassLibraryOOP2.dll
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\bin\Debug\ClassLibraryOOP2.pdb
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\obj\Debug\ClassLibraryOOP2.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\obj\Debug\ClassLibraryOOP2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\obj\Debug\ClassLibraryOOP2.dll
+C:\Users\Admin\source\repos\Console_OOP2\ClassLibraryOOP2\obj\Debug\ClassLibraryOOP2.pdb
