@@ -82,7 +82,7 @@ namespace ClassLibraryOOP2
             return $"{Date}";
         }
 
-        public  string ShowInfo()
+        public virtual string ShowInfo()
         {
             return $"{firstname} {lastname} {Date}";
         }
@@ -176,7 +176,7 @@ namespace ClassLibraryOOP2
         {
             Console.WriteLine($"{secondarySchoolName}");
         }
-        public new string ShowInfo()
+        public override string ShowInfo()
         {
             return $"{FirstName} {LastName} {Date} {znoPoints} {educationPoints} {secondarySchoolName}";
         }
@@ -267,7 +267,7 @@ namespace ClassLibraryOOP2
             return educationPlace;
         }
 
-        public new string ShowInfo()
+        public override string ShowInfo()
         {
             return $"{FirstName} {LastName} {Course} {Group} {Faculty} {EduccationPlace}";
         }
@@ -302,7 +302,7 @@ namespace ClassLibraryOOP2
         public string GetCathedra() { return Cathedra; }
         public string GetEducationPlace() { return EducationPlace; }
 
-        public new string ShowInfo()
+        public override string ShowInfo()
         {
             return $"{FirstName} {LastName} {Date} {Position} {Cathedra} {EducationPlace}";
         }
@@ -348,7 +348,7 @@ namespace ClassLibraryOOP2
         public string GetIssueDate() { return IssueDate; }
         public double GetMounthFee() { return MounthFee; }
 
-        public new string ShowInfo()
+        public override string ShowInfo()
         {
             return $"{FirstName} {LastName} {Date} {Id} {IssueDate} {MounthFee}";
         }
