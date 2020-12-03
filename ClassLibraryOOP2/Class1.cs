@@ -23,36 +23,24 @@ namespace ClassLibraryOOP2
             get { return lastname;}
             set { lastname = value; }
         }
-
-        private int age;
-        protected int Age
-        {
-            get { return age; }
-            set
-            {
-                if (value > 0 && value < 100)
-                    age = value;
-                else
-                    Console.WriteLine("Введіть коректний вік...");
-            }
-        }
+        protected string Date;
         public Person()
         {
             firstname = "Oleksii";
             lastname = "Kozak";
-            age=18;
+            Date = "03.12.2020";
         }
-        public Person(string firstname, string lastname, int age)
+        public Person(string firstname, string lastname, string date)
         {
             this.firstname = firstname;
             this.lastname = lastname;
-            this.age = age;
+            Date = date;
         }
-        public Person(int age)
+        public Person(string date)
         {
             firstname = "Oleksii";
             lastname = "Kozak";
-            this.age = age;
+            Date = date;
         }
 
         public void SetFirstName(string firstname)
@@ -63,9 +51,9 @@ namespace ClassLibraryOOP2
         {
             this.lastname = lastname;
         }
-        public void SetAge(int age)
+        public void SetDate(string date)
         {
-            this.age = age;
+            Date = date;
         }
 
         public string GetLastName()
@@ -76,9 +64,9 @@ namespace ClassLibraryOOP2
         {
             return FirstName;
         }
-        public int GetAge()
+        public string GetDate()
         {
-            return Age;
+            return Date;
         }
 
         public string ShowFirstName()
@@ -89,14 +77,14 @@ namespace ClassLibraryOOP2
         {
             return $"{lastname}";
         }
-        public string ShowAge()
+        public string ShowDate()
         {
-            return $"{age}";
+            return $"{Date}";
         }
 
         public  string ShowInfo()
         {
-            return $"{firstname} {lastname} {age}";
+            return $"{firstname} {lastname} {Date}";
         }
     }
 
@@ -141,9 +129,9 @@ namespace ClassLibraryOOP2
             educationPoints = 12;
             secondarySchoolName = "Киевская школа 93";
         }
-        public Matriculant(string firtname, string lastname, int age, int znoPoints, 
+        public Matriculant(string firtname, string lastname, string date, int znoPoints, 
             int educationPoints, string secondarySchoolName)
-            : base(firtname, lastname, age)
+            : base(firtname, lastname, date)
         {
             this.znoPoints = znoPoints;
             this.educationPoints = educationPoints;
@@ -190,7 +178,7 @@ namespace ClassLibraryOOP2
         }
         public new string ShowInfo()
         {
-            return $"{FirstName} {LastName} {Age} {znoPoints} {educationPoints} {secondarySchoolName}";
+            return $"{FirstName} {LastName} {Date} {znoPoints} {educationPoints} {secondarySchoolName}";
         }
     }
 
@@ -236,8 +224,8 @@ namespace ClassLibraryOOP2
             educationPlace = "ЖДУ";
         }
 
-        public Student(int age, int course, string group, string faculty, string educationPlace)
-            :base(age)
+        public Student(string date, int course, string group, string faculty, string educationPlace)
+            :base(date)
         {
             this.course = course;
             this.group = group;
@@ -297,9 +285,9 @@ namespace ClassLibraryOOP2
             Cathedra = "Фізико-математична";
             EducationPlace = "ЖДУ Франка";
         }
-        public Coucher(string firstname,string lastname,int age,
+        public Coucher(string firstname,string lastname,string date,
             string position,string cathedra,string educatioplace)
-            :base(firstname,lastname,age)
+            :base(firstname,lastname,date)
         {
             Position = position;
             Cathedra = cathedra;
@@ -316,53 +304,53 @@ namespace ClassLibraryOOP2
 
         public new string ShowInfo()
         {
-            return $"{FirstName} {LastName} {Age} {Position} {Cathedra} {EducationPlace}";
+            return $"{FirstName} {LastName} {Date} {Position} {Cathedra} {EducationPlace}";
         }
     }
 
     public class LibraryUser : Person
     {
-        protected int id { get; set; }
-        protected string issueDate { get; set; }
-        protected double mounthFee { get; set; }
+        protected int Id { get; set; }
+        protected string IssueDate { get; set; }
+        protected double MounthFee { get; set; }
 
         public LibraryUser()
             :base()
         {
-            id = 1;
-            issueDate = "01.12.2020";
-            mounthFee = 120;
+            Id = 1;
+            IssueDate = "01.12.2020";
+            MounthFee = 120;
         }
 
         public LibraryUser(string firstname,string lastname,
-            int age,int id,string issuedate,double mounthfee)
-            :base(firstname,lastname,age)
+            string date,int id,string issuedate,double mounthfee)
+            :base(firstname,lastname,date)
         {
-            this.id = id;
-            issueDate = issuedate;
-            mounthFee = mounthfee;
+            this.Id = id;
+            IssueDate = issuedate;
+            MounthFee = mounthfee;
         }
 
         public void SetId(int id)
         {
-            this.id = id;
+            Id = id;
         }
         public void SetIssueDate(string issueDate)
         {
-            this.issueDate = issueDate;
+            IssueDate = issueDate;
         }
         public void SetMounthFee(double mounthFee)
         {
-            this.mounthFee = mounthFee;
+            MounthFee = mounthFee;
         }
 
-        public int GetId() { return id; }
-        public string GetIssueDate() { return issueDate; }
-        public double GetMounthFee() { return mounthFee; }
+        public int GetId() { return Id; }
+        public string GetIssueDate() { return IssueDate; }
+        public double GetMounthFee() { return MounthFee; }
 
         public new string ShowInfo()
         {
-            return $"{FirstName} {LastName} {Age} {id} {issueDate} {mounthFee}";
+            return $"{FirstName} {LastName} {Date} {Id} {IssueDate} {MounthFee}";
         }
 
     }

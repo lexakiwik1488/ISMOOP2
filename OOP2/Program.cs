@@ -13,7 +13,7 @@ namespace OOP2
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            Person person = new Person("Lexa", "Kozak", 34);
+            Person person = new Person("Lexa", "Kozak","01.01.2000");
             //Console.WriteLine(person.ShowLastName());
             Console.Write("Вміст об'єкта классу Person: ");
             Console.WriteLine(person.ShowInfo());
@@ -23,7 +23,7 @@ namespace OOP2
             Console.WriteLine(matriculant.ShowInfo());
             //matriculant.ShowZnoPoints();
 
-            Student student = new Student(18, 2, "14HT", "fiz-mat", "Zhytomyr");
+            Student student = new Student("18.12.1999", 2, "14HT", "fiz-mat", "Zhytomyr");
             Console.Write("Вміст об'єкта классу Student: ");
             Console.WriteLine(student.ShowInfo());
             //Console.WriteLine(student.GetFirstName());

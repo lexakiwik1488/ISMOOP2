@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\bin\Debug\OOP2.exe.config
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\bin\Debug\OOP2.exe
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\bin\Debug\OOP2.pdb
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\bin\Debug\ClassLibraryOOP2.dll
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\bin\Debug\ClassLibraryOOP2.pdb
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\obj\Debug\Console_OOP2.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\obj\Debug\Console_OOP2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\obj\Debug\Console_OOP2.csproj.CopyComplete
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\obj\Debug\OOP2.exe
+C:\Users\Admin\source\repos\Console_OOP2\OOP2\obj\Debug\OOP2.pdb
